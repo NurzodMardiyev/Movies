@@ -1,0 +1,67 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color : #333;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  width: 400px;
+  height: 400px;
+  background-color: aquamarine;
+}
+.App > div {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+.App h4 {
+  font-size: 1.4em  ;
+}
+.todo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+  .danger {
+    width: 100px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-style: none;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 00px;
+    border-bottom-left-radius: 0px;
+    background-color: blue;
+    color: #fff;
+    cursor: pointer;
+    transition: .2s ease-in;
+  }
+  .danger:hover {
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    background-color: red;
+  }
